@@ -47,21 +47,24 @@
         }
 
         #vento {
-            font-size: 65px;
+            font-size: 50px;
         }
+
         #nuvem {
             font-size: 65px;
         }
+
         #pressao {
             font-size: 65px;
         }
+
         #humidade {
             font-size: 65px;
         }
+
         #coordenadas {
             font-size: 65px;
         }
-        
     </style>
 </head>
 
@@ -89,27 +92,31 @@
     <!-- Page content-->
     <div class="container">
         <div class="text-center mt-5">
-            <form class="pesquisar">
-                <input type="search" id="texto">
-                <img src="img/search.png" class="botaoP">
-            </form>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control procurar" placeholder="Recipient's username"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <img src="img/search.png" class="botaoP btn btn-outline-secondary" id="button-addon2">
+            </div>
             <p id="cidade" class="cidade"> </p>
 
-            <P id="vento" class="temperatura"> </P>
-                        
+            <P id="vento" class="temperatura">
+
+            </P> <img src="" alt="" class="icon" />
+
             <P id="vento" class="descricao"> </P>
-                        
+
             <P id="vento" class="humidade"> </P>
-            
-            <P id="vento" class="vento"> </P>
-                        
-            <P class="icon"> </P>            
+
+            <P id="vento" class="pressao"> </P>
+
+            <p id="vento" class="coordenadas"></p>
+
         </div>
     </div>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js" defer></script>
 </body>
 
 </html>

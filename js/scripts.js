@@ -8,7 +8,9 @@ let weather ={
             + this.apiKey
         )
         .then((response) => response.json())
-        .then(data => {
+        .then((data) => this.mostrarTempo(data));
+    },
+    mostrarTempo: function (data) {
         const { name } = data;
         const { icon, description } = data.weather[0];
         const { temp, humidity, pressure } = data.main;
@@ -21,9 +23,10 @@ let weather ={
             document.querySelector(".humidade").innerHTML = "Humidade: " + humidity + "%";
             document.querySelector(".pressao").innerHTML = "Pressao atmosférica: " + pressure + "hPa";
             document.querySelector(".coordenadas").innerHTML = "Coordenadas: lon " + lon + " lat " + lat;
-        }
-        );
     },
+
+
+
     search: function () {
         this.fetchWeather(document.querySelector(".procurar").value);
     }

@@ -12,6 +12,19 @@
   border:none;
   backface-visibility: hidden;
  }
+
+ *{
+    margin: 0;
+    padding: 0;
+ }
+
+.btn{
+  background: transparent;
+  border: none !important; 
+  margin: 87px;
+  font-size: 88px;
+  color: grey 
+}
  
 :root {
   --bs-blue: #0d6efd;

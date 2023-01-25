@@ -19,18 +19,18 @@ let weather ={
         document.querySelector(".cidade").innerHTML = "Meteorologia em " + name;
         document.querySelector(".icon").src = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
             document.querySelector(".descricao").innerHTML = description;
-            document.querySelector(".temperatura").innerHTML = temp + "ºC";
-            document.querySelector(".humidade").innerHTML = "Humidade: " + humidity + "%";
-            document.querySelector(".pressao").innerHTML = "Pressao atmosférica: " + pressure + "hPa";
+            document.querySelector(".temperatura").innerHTML = temp + " ºC";
+            document.querySelector(".humidade").innerHTML = "Humidade: " + humidity + " %";
+            document.querySelector(".pressao").innerHTML = "Pressao atmosférica: " + pressure + " hPa";
             document.querySelector(".coordenadas").innerHTML = "Coordenadas: lon " + lon + " lat " + lat;
     },
-
-
+        
 
     search: function () {
         this.fetchWeather(document.querySelector(".procurar").value);
     }
 };
+
 
 document
     .querySelector(".botaoP")
